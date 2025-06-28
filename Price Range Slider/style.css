@@ -1,0 +1,21 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.change-price
+{
+    text-align: center;
+    color: chocolate;
+    margin: 20px;
+}
+.slider-box
+{
+    width: 50%;
+    min-height: 40vh;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 20px;
+}
