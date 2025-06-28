@@ -18,5 +18,5 @@ console.log(accountId);
 // prefer not to use var because of issue in block scope and functional scope
 
 // tabulate for,
-console.table([accountId, accountEmail, accountPassword, accountCity, accountState]) 
+// console.table([accountId, accountEmail, accountPassword, accountCity, accountState]) 
 
