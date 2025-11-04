@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Validation</title>
+
+    <script>
+          let data = [9,45,3,45,78,42,56,77];
+
+          function getElement()
+          {
+            let el = document.getElementById(`element`).value;
+            // parseInt :: is a string is convert into number
+            if(el<data.length && typeof parseInt(el)=== "number" && el>=0)
+          {
+            alert(data[el])
+          }else{
+            alert("Please Enter the valid input");
+             location.reload(); // 🔁 Refresh even after invalid input
+          }
+          }
+
+    </script>
+</head>
+<body>
+     <input type="text" id="element"/>
+    <button onclick="getElement()">Get Element</button>
+</body>
+</html>

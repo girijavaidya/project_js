@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Onclick  with alert function</title>
+  <script>
+     let data = [9,45,3,45,78,42,56,77];
+    // function define
+    function getElement()
+    {
+        let el = document.getElementById('element').value
+        alert(data[el]);
+    }
+  </script>
+</head>
+<body>
+     <input type="text" id="element"/>
+    <button onclick="getElement()">Get Element</button>
+</body>
+</html>
