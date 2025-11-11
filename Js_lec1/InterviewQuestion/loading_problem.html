@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading_problem</title>
+</head>
+<style>
+    .balls {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ball {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: none;
+        background-color: red;
+    }
+</style>
+
+<body>
+    <div class="balls">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+
+    </div>
+
+    <script>
+        // make a loading animation using the above 5 balls
+        let balls = document.querySelectorAll('.ball');
+
+
+        // pass the index
+        function loading(index) {
+            index = index % 5;
+            console.log(index);
+
+
+            if (index != 0) {
+                // loading animation
+                balls[index - 1].style.opacity=1
+            } else 
+                {
+                    // last ball opacity set by 1
+                    balls[balls.length - 1].style.opacity = 1;
+                }
+
+                //   all ball opacity is 0
+                balls[index].style.opacity = 0;
+
+                setTimeout(function () {
+
+                    // function call
+                    loading(index + 1);
+                }, 200)
+
+            }
+        
+            loading(0)
+
+    </script>
+</body>
+
+</html>
