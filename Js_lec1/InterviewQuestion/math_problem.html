@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerical Problem</title>
+</head>
+<style>
+    .balls
+    {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+    }
+    .ball{
+       height: 4rem;
+       width: 4rem;
+       border-radius: 50%;
+       border: none;
+       background-color: red;
+    }
+</style>
+<body>
+    <h2>1. Fix the matematical problem using js</h2>
+    <h2>Make all the balls blue</h2>
+    <p>2+2=44</p>
+    <div class="balls">
+        <div class="ball"></div>
+          <div class="ball"></div>
+            <div class="ball"></div>
+              <div class="ball"></div>
+
+    </div>
+
+    <script>
+        // number problem fix
+        let para = document.querySelector("p");
+            para.innerText ="2+2=4";
+      
+            // change the ball color to blue
+            let redBalls = document.querySelectorAll(".ball");
+            console.log(redBalls);
+            for(let i=0; 1<redBalls.length; i++)
+            {
+                redBalls[i].style.backgroundColor = "blue";
+            }
+            
+
+    </script>
+</body>
+</html>
