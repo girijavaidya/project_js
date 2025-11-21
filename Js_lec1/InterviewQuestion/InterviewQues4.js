@@ -1,4 +1,4 @@
-var variable = 10;
+var variable = 10;  // hoisted = undefined
 
 (() =>
 {
